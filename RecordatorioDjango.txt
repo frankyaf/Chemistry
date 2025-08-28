@@ -1,0 +1,28 @@
+DJANGO
+
+- Si se quiere utilizar un entorno virtual es necesario primero instalar un entorno virtual:
+	pip install virtualenv
+(Dentro de la carpeta que vamos a tener nuestro proyecto)
+
+
+Conexión MySQL 
+- Creamos la base de datos con MySQL
+    CREATE DATABASE elements CHARACTER SET UTF8MB4 COLLATE utf8mb4_general_ci;
+
+-Usuarios
+   --- Crea los Usuarios
+   CREATE USER 'arman'@'localhost' IDENTIFIED BY 'password';
+   -- Da privilegios
+   GRANT ALL PRIVILEGES ON elements.* TO 'arman'@'localhost';
+   --Recarga privilegios
+   FLUSH PRIVILEGES;
+
+Primero hacemos las migraciones 
+python manage.py makemigrations
+python manage.py migrate
+
+instala el conector con MySQL
+    --pip install mysqlclient
+
+Crear un superusuario en DJANGO
+python manage.py createsuperuser
