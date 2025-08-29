@@ -52,3 +52,16 @@ Uso de licencia:  ISC
 
 El modelo que queremos implementar debe ir dentro de una app, y correr el siguiente comando:
     python manage.py startapp elementos
+
+
+git checkout -b import-json
+Creo otra rama
+
+git add .
+Se subieron los cambios
+
+git commit -m "Creación de la app elementos, para añadir el modelo para agregar los elementos, así como la lista JSON que se agregó"
+Se hizo el commit con su mensaje
+
+git push -u origin data-json
+Se creo la rama data-json en Github 
