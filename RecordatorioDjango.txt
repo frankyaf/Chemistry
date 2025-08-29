@@ -26,3 +26,29 @@ instala el conector con MySQL
 
 Crear un superusuario en DJANGO
 python manage.py createsuperuser
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/frankyaf/Chemistry.git
+git push -u origin main
+
+
+Se bajo la siguiente lista de elementos de la tabla periódica, de la siguiente liga:
+
+https://github.com/Bowserinator/Periodic-Table-JSON/blob/master/PeriodicTableJSON.json
+
+usada bajo la licencia:
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+
+
+Segunda Lista de elementos de la tabla periódica
+
+https://github.com/andrejewski/periodic-table/blob/master/data.json
+
+Uso de licencia:  ISC
+
+
+El modelo que queremos implementar debe ir dentro de una app, y correr el siguiente comando:
+    python manage.py startapp elementos
