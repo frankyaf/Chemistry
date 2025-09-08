@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Elemento
+from .serializers import ElementoSerializer
 
-# Create your views here.
+class ElementoViewSet(viewsets.ModelViewSet):
+    queryset = Elemento.objects.all()
+    serializer_class = ElementoSerializer

@@ -65,3 +65,6 @@ Se hizo el commit con su mensaje
 
 git push -u origin data-json
 Se creo la rama data-json en Github 
+
+Se creo una carpeta con react para manejar el frontend
+npx create-react-app frontend
