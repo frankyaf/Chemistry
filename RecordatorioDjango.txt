@@ -67,4 +67,9 @@ git push -u origin data-json
 Se creo la rama data-json en Github 
 
 Se creo una carpeta con react para manejar el frontend
-npx create-react-app frontend
+npm create vite@latest
+
+npm install react-router-dom react-hot-toast axios react-hook-form
+
+pip install django-cors-headers
+
