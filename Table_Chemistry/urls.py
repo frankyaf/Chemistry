@@ -20,12 +20,16 @@ from elementos.views import ElementoViewSet
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
+from elementos.views import ShortElementoViewSet
 
 
-router = routers.DefaultRouter()
-router.register(r'elementos', ElementoViewSet)
+#router = routers.DefaultRouter()
+#router.register(r'elementos', ElementoViewSet)
+#router.register(r'short_elementos', ShortElementoViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/elementos/', ElementoViewSet.as_view({'get': 'list'}), name='elementos-list'),
+    path('api/short_elementos/', ShortElementoViewSet.as_view({'get': 'list'}), name='short-elementos-list'),
 ]
+

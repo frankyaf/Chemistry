@@ -25,4 +25,14 @@ class Elemento(models.Model):
 
     def __str__(self):
         return f"{self.atomicnumber} - {self.symbol} ({self.name})"
+
+class Short_Element(models.Model):
+    atomicnumber = models.IntegerField(primary_key=True)   # Número atómico
+    symbol = models.CharField(max_length=5, unique=True)    # Símbolo (ej: H, He, Li)
+    name = models.CharField(max_length=100, unique=True)    # Nombre del elemento
+    atomicMass = models.CharField(max_length=20, blank=True, null=True)  # Masa atómica
+    groupBlock = models.CharField(max_length=25, blank=True, null=True)  # Bloque de grupo
+
+    def __str__(self):
+        return f"{self.atomicnumber} - {self.symbol} ({self.name})"
 # Create your models here.

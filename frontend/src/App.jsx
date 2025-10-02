@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {Card } from "./pages/Card";
+import { Card } from './pages/Card';
 import { Navigation } from './components/Navigation';
 
 function App(){
