@@ -66,6 +66,9 @@ Se hizo el commit con su mensaje
 git push -u origin data-json
 Se creo la rama data-json en Github 
 
+git push origin data-json
+Se hace otro commit pero al ser segunda ocasión se omite la bandera -u
+
 Se creo una carpeta con react para manejar el frontend
 npm create vite@latest
 
@@ -73,3 +76,4 @@ npm install react-router-dom react-hot-toast axios react-hook-form
 
 pip install django-cors-headers
 
+npm install tailwindcss @tailwindcss/vite
